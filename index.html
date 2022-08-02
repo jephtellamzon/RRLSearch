@@ -12,7 +12,154 @@
 </head>
 
 <body>
-<h1>Hello World</h1>
+  <div class="containter mt-2">
+    <h1 class="text-center">RRL Search</h1>
+  </div>
+
+  <div class="container d-grid gap-2">
+    <form onsubmit="doCopyText(this.CopyText.value); return false;">
+      <input type="text" class="form-control-sm" id="CopyText" name="CopyText" placeholder="Search Query" />
+      <button type="submit" class="btn btn-primary btn-sm">Copy To All</button>
+    </form><br>
+
+    <!-- Google -->
+    <form action="https://www.google.com/search" target="_blank">
+      <input type="text" class="form-control-sm" name="q" id="search01">
+      <button class="btn btn-primary btn-sm">Search Google</button>
+    </form>
+    <!-- Google Scholar -->
+    <form action="https://scholar.google.com/scholar" target="_blank">
+      <input type="text" class="form-control-sm" name="q" id="search02">
+      <button class="btn btn-primary btn-sm">Search Google Scholar</button>
+    </form>
+    <!-- ScienceDirect -->
+    <form action="https://www.sciencedirect.com/search" target="_blank">
+      <input type="text" class="form-control-sm" name="qs" id="search03">
+      <button class="btn btn-primary btn-sm">Search ScienceDirect</button>
+    </form>
+    <!-- BASE -->
+    <form action="https://www.base-search.net/Search/Results" target="_blank">
+      <input type="text" class="form-control-sm" name="lookfor" id="search04">
+      <button class="btn btn-primary btn-sm">Search BASE</button>
+    </form>
+    <!-- ResearchGate -->
+    <form action="https://www.researchgate.net/search/publication" target="_blank">
+      <input type="text" class="form-control-sm" name="q" id="search05">
+      <button class="btn btn-primary btn-sm">Search ResearchGate</button>
+    </form>
+    <!-- Mendeley -->
+    <form action="https://www.mendeley.com/search" target="_blank">
+      <input type="text" class="form-control-sm" name="query" id="search06">
+      <button class="btn btn-primary btn-sm">Search Mendeley</button>
+    </form>
+    <!-- Academia -->
+    <form action="https://www.academia.edu/search" target="_blank">
+      <input type="text" class="form-control-sm" name="q" id="search07">
+      <button class="btn btn-primary btn-sm">Search Academia</button>
+    </form>
+    <!-- Springer Open -->
+    <form action="https://www.springeropen.com/search" target="_blank">
+      <input type="text" class="form-control-sm" name="query" id="search08">
+      <button class="btn btn-primary btn-sm">Search Springer Open</button>
+    </form>
+    <!-- Academic Journals -->
+    <form action="https://academicjournals.org/articles/search" target="_blank">
+      <input type="text" class="form-control-sm" name="q" id="search09">
+      <button class="btn btn-primary btn-sm">Search Academic Journals</button>
+    </form>
+    <!-- ASCE Library -->
+    <form action="https://ascelibrary.org/action/doSearch" target="_blank">
+      <input type="text" class="form-control-sm" name="AllField" id="search10">
+      <button class="btn btn-primary btn-sm">Search ASCE Library</button>
+    </form>
+    <!-- Cambridge Core -->
+    <form action="https://www.cambridge.org/core/search" target="_blank">
+      <input type="text" class="form-control-sm" class="form-control-sm" name="q" id="search11">
+      <button class="btn btn-primary btn-sm">Search Cambridge Core</button>
+    </form>
+
+    <!-- Core UK -->
+    <form action="https://core.ac.uk/search" target="_blank">
+      <input type="text" class="form-control-sm" name="q" id="search12">
+      <button class="btn btn-primary btn-sm">Search Core UK</button>
+    </form>
+
+    <!-- Elsevier -->
+    <form action="https://www.elsevier.com/search-results" target="_blank">
+      <input type="text" class="form-control-sm" name="query" id="search13">
+      <button class="btn btn-primary btn-sm">Search Elsevier</button>
+    </form>
+
+    <!-- JSTOR -->
+    <form action="https://www.jstor.org/action/doBasicSearch" target="_blank">
+      <input type="text" class="form-control-sm" name="Query" id="search14">
+      <button class="btn btn-primary btn-sm">Search JSTOR</button>
+    </form>
+    <!-- TIB.EU -->
+    <form action="https://www.tib.eu/en/search" target="_blank">
+      <input type="text" class="form-control-sm" name="tx_tibsearch_search[query]" id="search15">
+      <button class="btn btn-primary btn-sm">Search TIB.EU</button>
+    </form>
+    <!-- Oxford Academic -->
+    <form action="https://academic.oup.com/journals/search-results" target="_blank">
+      <input type="text" class="form-control-sm" name="q" id="search16">
+      <button class="btn btn-primary btn-sm">Search Oxford Academic</button>
+    </form>
+    <!-- PubMED -->
+    <form action="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">
+      <input type="text" class="form-control-sm" name="term" id="search17">
+      <button class="btn btn-primary btn-sm">Search PubMED</button>
+    </form>
+
+    <!-- SAGE Pub -->
+    <form action="https://journals.sagepub.com/action/doSearch" target="_blank">
+      <input type="text" class="form-control-sm" name="AllField" id="search18">
+      <button class="btn btn-primary btn-sm">Search SAGE Pub</button>
+    </form>
+    <!-- SCRIP -->
+    <form action="https://www.scirp.org/journal/articles.aspx" target="_blank">
+      <input type="text" class="form-control-sm" name="searchcode" id="search19">
+      <button class="btn btn-primary btn-sm">Search SCRIP</button>
+    </form>
+    <!-- Springer Link -->
+    <form action="https://link.springer.com/search" target="_blank">
+      <input type="text" class="form-control-sm" name="query" id="search20">
+      <button class="btn btn-primary btn-sm">Search Springer Link</button>
+    </form>
+
+    <!-- Sci Pub-->
+    <form action="https://www.thescipub.com/search/" target="_blank">
+      <input type="text" class="form-control-sm" name="query" id="search21">
+      <button class="btn btn-primary btn-sm">Search SciPub</button>
+    </form>
+    <!-- Taylor & Francis-->
+    <form action="https://www.tandfonline.com/action/doSearch" target="_blank">
+      <input type="text" class="form-control-sm" name="AllField" id="search22">
+      <button class="btn btn-primary btn-sm">Search Taylor & Fracis</button>
+    </form>
+
+    <div class="container p-2">
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    function doCopyText(CopyText) {
+      var copy = document.getElementById("CopyText");
+      for (searchNo = 1; searchNo <= 50; searchNo++) {
+        if (searchNo < 10) {
+          searchNo = "0" + searchNo.toString();
+        }
+        else { searchNo = searchNo.toString(); }
+        console.log(searchNo)
+        item = document.getElementById("search" + searchNo);
+        if (item != null) {
+          item.value = copy.value;
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
